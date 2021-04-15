@@ -15,7 +15,7 @@
     "libs-publish/*"
   ],
   "devDependencies": {
-    "jest": "*"
+    "jest": "*"      //<----- this is never install b/c of "--production"
   },
   "scripts": {
     "mono:bootstrap": "npx lerna bootstrap --use-workspaces",
