@@ -1,6 +1,4 @@
-Idea:
-
-<img src="./docs/img.jpg" />
+<img src="./docs/image-idea.jpg" />
 
 // file: ./package.json
 
