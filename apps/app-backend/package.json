@@ -15,6 +15,6 @@
     "express": "*"
   },
   "scripts": {
-    "container:install": "yarn --production"
+    "install:prod": "yarn --production"
   }
 }
