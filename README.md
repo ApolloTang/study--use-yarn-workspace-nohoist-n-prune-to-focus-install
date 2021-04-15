@@ -36,7 +36,7 @@ file: ./apps/app-backend/package.json
   "private": true,
   "workspaces": {
     "nohoist": [
-      "*"
+      "*"      // <---- only 2nd party is nohoisted, 3rd party is still hoisted
     ]
   },
   "main": "src/index.js",
