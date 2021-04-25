@@ -6,8 +6,7 @@
   "license": "MIT",
   "workspaces": [
     "apps/*",
-    "libs-local/*",
-    "libs-publish/*"
+    "libs-local/*"
   ],
   "devDependencies": {
     "jest": "*"

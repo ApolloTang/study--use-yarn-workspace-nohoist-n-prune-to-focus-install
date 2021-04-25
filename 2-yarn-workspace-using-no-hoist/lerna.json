@@ -1,8 +1,7 @@
 {
   "packages": [
     "apps/*",
-    "libs-local/*",
-    "libs-publish/*"
+    "libs-local/*"
   ],
   "npmClient": "yarn",
   "useWorkspaces": true,
