@@ -1,0 +1,7 @@
+{
+  "name": "@apollotang/local-ui-pkg-1",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Apollo Tang",
+  "license": "MIT"
+}

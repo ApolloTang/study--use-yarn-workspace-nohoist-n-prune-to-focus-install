@@ -1,0 +1,16 @@
+{
+  "name": "@apollotang/app-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.js",
+  "author": "Apollo Tang",
+  "license": "MIT",
+  "dependencies": {
+    "@apollotang/local-pkg-b": "1.0.0",
+    "@apollotang/local-ui-pkg-1": "1.0.0",
+    "react": "*"
+  },
+  "scripts": {
+    "ci:install": "yarn"
+  }
+}

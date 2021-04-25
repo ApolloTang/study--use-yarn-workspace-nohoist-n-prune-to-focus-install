@@ -1,0 +1,18 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "libs-local/*"
+  ],
+  "devDependencies": {
+    "jest": "*"
+  },
+  "scripts": {
+    "mono:bootstrap": "npx lerna bootstrap --use-workspaces",
+    "mono:clean": "rm -fr node_modules && lerna clean"
+  }
+}
