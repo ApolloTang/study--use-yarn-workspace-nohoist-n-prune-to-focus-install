@@ -1,0 +1,18 @@
+.
+├── apps/
+│   ├── app-backend/
+│   │   └── package.json
+│   └── app-frontend/
+│       └── package.json
+│
+├── libs-local/
+│   ├── local-pkg-a/
+│   │   └── package.json
+│   ├── local-pkg-d/
+│   │   └── package.json
+│   └── local-ui-pkg-1/
+│       └── package.json
+│
+├── lerna.json
+├── package.json
+└── yarn.lock

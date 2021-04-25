@@ -1,0 +1,36 @@
+.
+├── apps/
+│   ├── app-backend/
+│   │   ├── node_modules/
+│   │   │   └── express/
+│   │   └── package.json
+│   └── app-frontend/
+│       ├── node_modules/
+│       │   └── react/
+│       └── package.json
+│
+├── libs-local/
+│   ├── local-pkg-a/
+│   │   └── package.json
+│   ├── local-pkg-d/
+│   │   └── package.json
+│   └── local-ui-pkg-1/
+│       └── package.json
+│
+├── node_modules/
+│   ├── @apollotang/
+│   │   ├── app-backend -> ../../apps/app-backend/
+│   │   ├── app-frontend -> ../../apps/app-frontend/
+│   │   ├── local-pkg-b -> ../../libs-local/local-pkg-a/
+│   │   ├── local-pkg-d -> ../../libs-local/local-pkg-d/
+│   │   └── local-ui-pkg-1 -> ../../libs-local/local-ui-pkg-1/
+│   ├── abab/
+│   ├── acorn/
+│   ...
+│   ├── safe-buffer/
+│   ...
+│
+├── lerna.json
+├── package.json
+└── yarn.lock
+

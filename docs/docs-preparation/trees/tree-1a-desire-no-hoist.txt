@@ -1,0 +1,38 @@
+.
+├── apps/
+│   ├── app-backend/
+│   │   ├── node_modules/
+│   │   │   ├── @apollotang/
+│   │   │   ...
+│   │   │   ├── abab/
+│   │   │   ├── acorn/
+│   │   │   ├── express/
+│   │   │   ...
+│   │   │   ├── safe-buffer/
+│   │   │    ...
+│   │   └── package.json
+│   │ 
+│   └── app-frontend/
+│       ├── node_modules/
+│       │   ├── @apollotang/
+│       │   ...
+│       │   ├── abab/
+│       │   ├── acorn/
+│       │   ...
+│       │   ├── safe-buffer/
+│       │    ...
+│       │   └── react/
+│       └── package.json
+│
+├── libs-local/
+│   ├── local-pkg-a/
+│   │   └── package.json
+│   ├── local-pkg-d/
+│   │   └── package.json
+│   └── local-ui-pkg-1/
+│       └── package.json
+│
+├── lerna.json
+├── package.json
+└── yarn.lock
+
