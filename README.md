@@ -1,7 +1,6 @@
 # Preparing monorepo to deploy a project with pruning strategies 
 <br>
----
-<br>
+Consider the following monorepo, we wish to deploy app-backend/ to the server:
 
 ```
 .
@@ -26,31 +25,38 @@
 <br>
 ---
 <br>
+We bootstrap the monorepo such that each app folder contain all and only the neccessary artifact required for deployment:
+<br><br>
 
 <img src="./docs/imgs/1-disired-focus-mono-bootstrap.png" />
 
 <br>
 ---
 <br>
+However, package manager's workspace linking behaviour is not what we want -- it hoisted and linked the required dependencies in the root node_modules/:
+<br><br>
 
 <img src="./docs/imgs/2-how-mono-is-bootstraped.png" />
 
 <br>
 ---
 <br>
+If we are using yarn workspace, we could use the "nohoist" feature. But this feature only "hoist" the 2nd party dependencies, 3rd party dependencies still hoisted in the root node_modules/ <br><br>
+
 
 <img src="./docs/imgs/3-mono-boostraped-w-nohoist.png" />
 
 <br>
 ---
 <br>
+Here is a work around: we pruning the monorepo before executing the linkage:
+<br>
 
 ### Pruning monorepo
 
+
 ```
   "scripts": {
-    "mono:bootstrap": "npx lerna bootstrap --use-workspaces",
-    "mono:clean": "rm -fr node_modules && lerna clean",
     "app-backend:prune-apps": "mv apps/app-backend/ apps/tmp/ && rm -fr apps/app-* && mv apps/tmp/ apps/app-backend",
     "app-backend:prune-libs-local": "## TODO",
     "app-backend:install-prod": "yarn app-backend:prune-apps && yarn workspace @apollotang/app-backend run install:prod"
@@ -62,5 +68,6 @@
 <br>
 ---
 <br>
+As you can see, bootstraping after pruning, the artifact only consist the required  dependentcies.<br><br>
 
 <img src="./docs/imgs/5-bootstrap-w-n-wo-pruning.png" />
