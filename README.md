@@ -1,3 +1,8 @@
+# Preparing monorepo to deploy a project with pruning strategies 
+<br>
+---
+<br>
+
 ```
 .
 ├── apps/
@@ -18,20 +23,27 @@
 ├── package.json
 └── yarn.lock
 ```
-
+<br>
 ---
+<br>
 
 <img src="./docs/imgs/1-disired-focus-mono-bootstrap.png" />
 
-----
+<br>
+---
+<br>
 
 <img src="./docs/imgs/2-how-mono-is-bootstraped.png" />
 
-----
+<br>
+---
+<br>
 
 <img src="./docs/imgs/3-mono-boostraped-w-nohoist.png" />
 
-----
+<br>
+---
+<br>
 
 ### Pruning monorepo
 
@@ -47,6 +59,8 @@
 
 <img src="./docs/imgs/4-pruning-b4-boostrap.png" />
 
-----
+<br>
+---
+<br>
 
 <img src="./docs/imgs/5-bootstrap-w-n-wo-pruning.png" />
