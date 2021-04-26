@@ -1,6 +1,6 @@
 # Preparing monorepo to deploy a project with pruning strategies 
 <br>
-Consider the following monorepo, we wish to deploy app-backend/ to the server:
+Consider the following monorepo. We wish to prepare the artifact of app-backend/ so we can deploy it to the server:
 
 ```
 .
@@ -25,7 +25,7 @@ Consider the following monorepo, we wish to deploy app-backend/ to the server:
 <br>
 ---
 <br>
-We bootstrap the monorepo such that each app folder contain all and only the neccessary artifact required for deployment:
+We bootstrap the monorepo such that each app folder contain all and only the neccessary artifact required for "app-backend/" deployment:
 <br><br>
 
 <img src="./docs/imgs/1-disired-focus-mono-bootstrap.png" />
