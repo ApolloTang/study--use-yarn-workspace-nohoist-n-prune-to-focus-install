@@ -4,13 +4,11 @@
 │       ├── node_modules/
 │       │   └── express/
 │       └── package.json
-│   
+│  
 ├── libs-local/
 │   ├── local-pkg-a/
 │   │   └── package.json
-│   ├── local-pkg-d/
-│   │   └── package.json
-│   └── local-ui-pkg-1/
+│   └── local-pkg-d/
 │       └── package.json
 │
 ├── node_modules/
